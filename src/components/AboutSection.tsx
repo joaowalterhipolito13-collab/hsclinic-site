@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { asset } from "@/lib/paths";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -23,7 +24,7 @@ export default function AboutSection() {
         >
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-[160px] rounded-b-3xl">
             <Image
-              src="/images/Foto Ana Victoria.png"
+              src={asset("/images/Foto Ana Victoria.png")}
               alt="Dra. Ana Victória"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -94,7 +95,7 @@ export default function AboutSection() {
         </div>
 
         <Image
-          src="/images/hs-monograma.svg"
+          src={asset("/images/hs-monograma.svg")}
           alt=""
           width={70}
           height={70}

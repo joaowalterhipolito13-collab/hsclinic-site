@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/paths";
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
           <span className="h-px flex-1 bg-gold" />
           <span className="flex items-center gap-2 whitespace-nowrap text-xs uppercase tracking-[0.2em] text-text-secondary">
             <Image
-              src="/icons/localizacao.png"
+              src={asset("/icons/localizacao.png")}
               alt=""
               width={14}
               height={14}
@@ -44,7 +45,7 @@ export default function Hero() {
           className="mt-10 flex w-full max-w-xs items-center justify-center gap-3 rounded-full bg-gold px-8 py-4 text-sm font-medium text-white shadow-lg shadow-gold/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-gold/30 sm:w-auto"
         >
           <Image
-            src="/icons/whatsapp.png"
+            src={asset("/icons/whatsapp.png")}
             alt=""
             width={20}
             height={20}
@@ -57,7 +58,7 @@ export default function Hero() {
       {/* Coluna direita */}
       <div className="w-full opacity-0 animate-fade-up animation-delay-200 lg:w-[55%]">
         <Image
-          src="/images/imagem-hero-mobile.png"
+          src={asset("/images/imagem-hero-mobile.png")}
           alt="Recepção da HS Clinic"
           width={694}
           height={644}
@@ -66,7 +67,7 @@ export default function Hero() {
           className="mx-auto block h-auto w-full max-w-md lg:hidden"
         />
         <Image
-          src="/images/imagem-hero.png"
+          src={asset("/images/imagem-hero.png")}
           alt="Recepção da HS Clinic"
           width={830}
           height={858}

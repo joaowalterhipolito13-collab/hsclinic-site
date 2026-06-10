@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { asset } from "@/lib/paths";
 
 interface Service {
   icon: string;
@@ -92,7 +93,7 @@ export default function ServicesSection() {
             >
               <div className="flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:brightness-110 group-hover:drop-shadow-[0_0_6px_rgba(184,151,58,0.45)]">
                 <Image
-                  src={service.icon}
+                  src={asset(service.icon)}
                   alt=""
                   width={56}
                   height={56}

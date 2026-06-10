@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/paths";
 
 interface TrustItem {
   icon: string;
@@ -37,7 +38,7 @@ function TrustItemContent({ item, showDivider }: { item: TrustItem; showDivider:
       )}
       <div className="flex w-full flex-col items-center justify-center gap-2 px-4 py-6 text-center transition-opacity duration-300 hover:opacity-80 sm:py-10">
         <Image
-          src={item.icon}
+          src={asset(item.icon)}
           alt=""
           width={40}
           height={40}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/paths";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -16,7 +17,7 @@ export default function Header() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 lg:px-12">
         <Link href="#home" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src={asset("/images/logo.png")}
             alt="HS Clinic"
             width={140}
             height={60}
